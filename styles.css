@@ -1,0 +1,39 @@
+.nav-link.dropdown {
+    position: relative;
+}
+
+.nav-link .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s ease-in-out;
+    z-index: 1000;
+}
+
+.nav-link .dropdown-menu li {
+    padding: 10px 20px;
+}
+
+.nav-link .dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.nav-link .dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/* Show dropdown on hover */
+.nav-link.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
